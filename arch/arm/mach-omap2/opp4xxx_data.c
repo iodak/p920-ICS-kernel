@@ -93,7 +93,7 @@ struct omap4_ldo_abb_trim_data {
 #define OMAP4430_VDD_MPU_OPP100_UV		1200000
 #define OMAP4430_VDD_MPU_OPPTURBO_UV		1325000
 #define OMAP4430_VDD_MPU_OPPNITRO_UV		1388000
-#define OMAP4430_VDD_MPU_OPPNITROSB_UV		1398000
+#define OMAP4430_VDD_MPU_OPPNITROSB_UV		1388000
 
 
 struct omap_volt_data omap443x_vdd_mpu_volt_data[] = {
