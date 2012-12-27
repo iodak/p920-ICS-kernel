@@ -15,7 +15,7 @@
 #include <mach/lpddr2-elpida.h>
 
 const struct lpddr2_timings lpddr2_elpida_timings_466_mhz = {
-	.max_freq	= 480000000,
+	.max_freq	= 466666666,
 	.RL		= 7,
 	.tRPab		= 21,
 	.tRCD		= 18,
