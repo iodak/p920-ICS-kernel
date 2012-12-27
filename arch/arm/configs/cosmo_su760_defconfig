@@ -2421,6 +2421,7 @@ CONFIG_IIO=y
 # Triggers - standalone
 #
 CONFIG_ZRAM=y
+CONFIG_ZRAM_LZO=y
 # CONFIG_FB_SM7XX is not set
 # CONFIG_LIRC_STAGING is not set
 CONFIG_MACH_NO_WESTBRIDGE=y
