@@ -82,7 +82,7 @@ label_smc:
 	dsb
 	dmb
 
-	smc	#0
+/*	smc	#0          */
 	b	service_end
 	nop
 

@@ -384,7 +384,7 @@ __v7_setup:
 	mov	r10, r12
 	mov	r12, #0x114			@ prep for SMC call to 0x114
 	dsb
-	smc	#0
+/*	smc	#0 */
 	dsb
 	mov	r12, r10
 
