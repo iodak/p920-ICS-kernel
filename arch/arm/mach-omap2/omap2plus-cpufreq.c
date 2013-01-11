@@ -354,7 +354,7 @@ static int __cpuinit omap_cpu_init(struct cpufreq_policy *policy)
 	cpufreq_frequency_table_get_attr(freq_table, policy->cpu);
 
 	policy->min = policy->cpuinfo.min_freq;
-	policy->max = policy->cpuinfo.max_freq;
+	policy->max = 1008000;
 	policy->cur = omap_getspeed(policy->cpu);
 
 	for (i = 0; freq_table[i].frequency != CPUFREQ_TABLE_END; i++)
@@ -533,10 +533,6 @@ static ssize_t store_uv_mv_table(struct cpufreq_policy *policy,
 				dep_table[i].dep_vdd_volt > volt_cur*1000) {
 				// imoseyon - ugly hack (fix later! yeah right)
 				if (volt_cur < 1127) {
-					if (volt_cur < 962) 
-					   mpu_voltdm->vdd->dep_vdd_info->
-						dep_table[i].dep_vdd_volt = 650000;
-					else
 					   mpu_voltdm->vdd->dep_vdd_info->
 						dep_table[i].dep_vdd_volt = 962000;
 				} else mpu_voltdm->vdd->dep_vdd_info->
@@ -555,7 +551,7 @@ static ssize_t store_uv_mv_table(struct cpufreq_policy *policy,
 			buf += (strlen(size_cur)+1);
 
 			// imoseyon - force smartreflex to recalibrate based on new voltages
-			if (freq_table[i].frequency <= 1200000 && 
+			if (freq_table[i].frequency <= 1300000 && 
 				freq_table[i].frequency >= policymin) {
 				vdata = omap_voltage_get_curr_vdata(mpu_voltdm);
 				if (!vdata) {
