@@ -48,7 +48,6 @@ modules.builtin
 #
 # git files that we don't want to ignore even it they are dot-files
 #
-!.gitignore
 !.mailmap
 
 #
@@ -57,7 +56,11 @@ modules.builtin
 include/config
 include/linux/version.h
 include/generated
+include/generated/autoconf.h
+include/config/tristate.conf
+include/config/auto.conf
 arch/*/include/generated
+include/generated/compile.h
 
 # stgit generated dirs
 patches-*

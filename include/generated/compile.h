@@ -1,7 +1,7 @@
-/* This file is auto generated, version 1 */
+/* This file is auto generated, version 3 */
 /* SMP PREEMPT */
 #define UTS_MACHINE "arm"
-#define UTS_VERSION "#1 SMP PREEMPT Thu Dec 27 17:46:17 CET 2012"
+#define UTS_VERSION "#3 SMP PREEMPT Fri Jan 11 21:54:03 CET 2013"
 #define LINUX_COMPILE_BY "ivan"
 #define LINUX_COMPILE_HOST "ubuntu"
-#define LINUX_COMPILER "gcc version 4.4.1 (Sourcery G++ Lite 2010q1-202) "
+#define LINUX_COMPILER "gcc version 4.7.3 20121106 (prerelease) (crosstool-NG linaro-1.13.1-4.7-2012.11-20121123 - Linaro GCC 2012.11) "
